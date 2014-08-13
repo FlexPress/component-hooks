@@ -1,0 +1,10 @@
+{
+    "name": "flexpress/component-hooks",
+    "description": "Hook system helper for WordPress",
+    "autoload": {
+        "psr-4": {
+            "FlexPress\\Components\\Hooks\\": "src/FlexPress/Components/Hooks/"
+        }
+    }
+
+}

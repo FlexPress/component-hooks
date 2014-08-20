@@ -111,3 +111,14 @@ And finally you can also specify the number of paramters you expect like this:
 ```
 
 Which allows you to add both action and filter hooks, speficy the priority as well as the number of params you expect, so nothing is taken away from the add_action and add_filter functions.
+
+## Public methods - Hooker
+- hookUp() - Loops through all the hookables passed to the hooker and hooks them up.
+
+## Public methods - HookableTrait
+- hookUp() - Uses reflection to find all public methods with a valid docblock and hook them up.
+
+## Protected methods - HookableTrait
+- getMethodAttributes() - Gets all the attibutes of a methods docblock.
+- getHookName($methodName, $attributes) - For a given method name and attibutes, gets the hook name. e.g. theContent becomes the_content
+- registerHook($hook_name, $method_name, $attributes) - Actuallys registers the hook depending on what type it is.

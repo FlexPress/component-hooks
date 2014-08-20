@@ -88,3 +88,26 @@ and for filters you do the same but change the type to filter:
  * @type filter
  */
 ```
+
+## Advanced usage
+
+As well as specifying the type of hook you can also specify the priority like this:
+
+```
+/**
+ * @type action
+ * @priority 10
+ */
+```
+
+And finally you can also specify the number of paramters you expect like this:
+
+```
+/**
+ * @type action
+ * @priority 10
+ * @params 3
+ */
+```
+
+Which allows you to add both action and filter hooks, speficy the priority as well as the number of params you expect, so nothing is taken away from the add_action and add_filter functions.
